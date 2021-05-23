@@ -24,7 +24,6 @@ ul {
     margin: 0;
     padding: 2% 0% 3% 8%;
     font-weight: bold;
- 
   }
   
   li {
@@ -34,62 +33,48 @@ ul {
 
 .btn {
     background-color:@yellow;
-    border-color: @yellow;
     color: @dark-grey;
 }
 
 #index {
 
-    header.jumbo {
-        // padding: 50px 0;
-        background-image: url("../img/banner-bg.png");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 450px;
-
+        header.jumbo {
+            background-image: url("../img/banner-bg.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+       }
 
         h1 {
             padding: 0 10px;
             // .border-right();
             // .border-left();
-        }
-      
-       
-    }
-
-    .bread{
-        padding-top: 23%;
-    }
-    p.content1 {
-        padding-right: 5%;
-    }
-
-    .content2.p-2.w-100 {
-        margin-left: 6%;
-    }
-
-
-
-    button {
-        background-color:@yellow;
-        border-color: @yellow;
-        color: @dark-grey;
-        padding: .375rem .75rem;
-        font-size: 1rem;
-        border-radius: .25rem;
-
-    }
+        }     
    
-  
-    
-    }
 
-   
+            .bread{
+                padding-top: 23%;
+            }
+
+            p.content1 {
+                padding-right: 5%;
+            }
+
+            .content2.p-2.w-100 {
+                margin-left: 6%;
+            }
+
+            button {
+                background-color:@yellow;
+                color: @dark-grey;
+                .button();
+            }
+    }
 
 
 .bg-primary {
@@ -104,8 +89,8 @@ ul {
  }
 
  footer img {
-     width: 240px;
-     padding-top: 1%;
+    .img();
+     
  }
 
 section.d-flex.text-black {
@@ -113,10 +98,9 @@ section.d-flex.text-black {
 }
 
 #grey {
-    background-color: #f3f3f3;
+    background-color: @light-grey;
   
   }
-
 
   .red {
     color:@red;
