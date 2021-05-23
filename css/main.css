@@ -63,6 +63,12 @@ nav {
 footer {
   text-align: center;
   background-color: #080101;
+  height: 120px;
+  border-block-start: #F8DF1F solid 8px;
+}
+footer img {
+  width: 240px;
+  padding-top: 1%;
 }
 section.d-flex.text-black {
   padding: 3% 9% 3% 9%;
