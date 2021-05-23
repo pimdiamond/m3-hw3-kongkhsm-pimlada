@@ -27,6 +27,16 @@
 }
 nav {
   height: 80px;
+  background-color: #F8DF1F;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 3% 0% 3% 8%;
+}
+li {
+  display: inline;
+  padding: 2%;
 }
 .btn {
   background-color: #F8DF1F;
