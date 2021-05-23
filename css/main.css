@@ -29,6 +29,9 @@ nav {
   height: 80px;
   background-color: #F8DF1F;
 }
+header.container-fluid.jumbo.text-center {
+  box-shadow: rgba(59, 56, 56, 0.33) 0 0 0 1000000px inset;
+}
 ul {
   list-style-type: none;
   margin: 0;
