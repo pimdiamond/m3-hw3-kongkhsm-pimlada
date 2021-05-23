@@ -1,15 +1,60 @@
 // out: ../css/main.css 
 
 @import 'variables';
+@import 'mixins';
 
 
-header .jumbo{
-    padding: 50px 0;
-    text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+    border: 0;
+    font-family: @primary-font;
 }
 
-h1 {
-    color: red;
+nav {
+    height: 40px;
+    background-color: @yellow;
 }
 
+#index {
 
+    header.jumbo {
+        padding: 50px 0;
+        background-image: url("/Users/Pimlada/Desktop/m3-hw3-kongkhsm-pimlada/img/banner-bg.png");
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            padding: 0 10px;
+            .border-right();
+            .border-left();
+        }
+    }
+    div {
+        padding: 5px 0;
+    }
+    h2 {
+        width: 164px;
+        color: @red;
+        .border-right();
+        .border-left();
+    }
+    h3 {
+        color: @dark-green;
+        .border-left();
+    }
+    h4 {
+        color: @light-green;
+    }
+    .btn {
+        background-color: red;
+        border-color: @dark-gray;
+        &:hover {
+            background-color: red;
+            border-color: @dark-green + #111111;
+        }
+    }
+}
