@@ -1,8 +1,7 @@
-// out: ../css/main.css 
+// out: ../css/main.css
 
 @import 'variables';
 @import 'mixins';
-
 
 * {
 	margin: 0;
@@ -12,8 +11,13 @@
 }
 
 nav {
-    height: 40px;
-    background-color: @yellow;
+    height: 80px;  
+}
+
+.btn {
+    background-color:@yellow;
+    border-color: @yellow;
+    color: @dark-grey;
 }
 
 #index {
@@ -26,35 +30,51 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 350px;
 
         h1 {
             padding: 0 10px;
             .border-right();
             .border-left();
         }
+
+       
     }
-    div {
-        padding: 5px 0;
+   
+  
+    
     }
-    h2 {
-        width: 164px;
-        color: @red;
-        .border-right();
-        .border-left();
+
+    button {
+        background-color:@yellow;
+        border-color: @yellow;
+        color: @dark-grey;
+
     }
-    h3 {
-        color: @dark-green;
-        .border-left();
-    }
-    h4 {
-        color: @light-green;
-    }
-    .btn {
-        background-color: red;
-        border-color: @dark-gray;
-        &:hover {
-            background-color: red;
-            border-color: @dark-green + #111111;
-        }
-    }
+
+
+.bg-primary {
+    background-color: white;
 }
+ footer {
+     text-align: center;
+     background-color: @dark-grey;
+ }
+
+section.d-flex.text-black {
+    padding: 3% 9% 3% 9%;
+}
+
+#grey {
+    background-color: #f3f3f3;
+  
+  }
+
+  .p-2 {
+    padding-left: 10%;
+  }
+
+  .red {
+    color:@red;
+    background: none;
+  }
